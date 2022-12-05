@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-section{
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.col{ 
   color: white;
+  width: 100%;
+  padding: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  font-family: 'Big Shoulders Display';
+  font-size: 1.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.col p{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 0 60px 0;
+}
+
+/* Button */
+button{
+  font-family: 'Big Shoulders Display';
+  padding: 10px 25px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.seadans-button{
+  color: hsl(31, 77%, 52%);
+
+}
+
+.suv-button{
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-button{
+  color: hsl(179, 100%, 13%);
+}
+
+/* Item  */
+.item-2{
+  background-color: hsl(184, 100%, 22%);
+}
+
+.item-1{background-color: hsl(31, 77%, 52%);}
+
+.item-3{
+  background-color: hsl(179, 100%, 13%);
+}
+
+/* Medai query */
+
+@media screen and (min-width: 415px )  {
+  .main-section{
+    min-width: 100%;
+    display: flex;
   }
 }
+
